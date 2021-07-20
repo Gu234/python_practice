@@ -1,6 +1,3 @@
-game = [[0, 0, 0],
-        [0, 0, 0],
-        [0, 0, 0]]
 PLAYER_ONE = 1
 PLAYER_TWO = 2
 EMPTY_TILE = 0
@@ -23,7 +20,13 @@ def make_move(player, game):
             break
 
 
-while True:
-    make_move(PLAYER_ONE, game)
-    make_move(PLAYER_TWO, game)
-    print(game)
+if __name__ == '__main__':
+    game = [[0, 0, 0],
+            [0, 0, 0],
+            [0, 0, 0]]
+    while True:
+        make_move(PLAYER_ONE, game)
+        # chk victory
+
+        make_move(PLAYER_TWO, game)
+        print(game)

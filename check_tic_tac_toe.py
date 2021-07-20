@@ -23,10 +23,10 @@ def check_tic_tac_toe(game):
             return PLAYER_TWO
     return NO_WINNER
 
+if __name__ == '__main__':
+    game = [[2, 2, 0],
+            [2, 1, 0],
+            [2, 1, 1]]
 
-game = [[2, 2, 0],
-        [2, 1, 0],
-        [2, 1, 1]]
-
-result = check_tic_tac_toe(game)
-print(result)
+    result = check_tic_tac_toe(game)
+    print(result)
